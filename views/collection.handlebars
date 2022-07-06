@@ -1,0 +1,30 @@
+{{!-- {{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}} --}}
+
+{{#if cards.length}}
+<section>
+  <h2>{{user.username}}'s Inventory</h2>
+  <div class="container">
+    <div class="row">
+    {{#each cards as |card|}}
+    <div class="col-3">
+      <img src="{{img_uri}}" alt="image of {{card_name}}">
+      {{card_name}}
+    </div>
+    {{/each}}
+    </div>
+  </div>
+  
+</section>
+{{/if}}
